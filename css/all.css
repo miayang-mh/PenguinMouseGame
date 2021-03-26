@@ -1,0 +1,263 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* css reset 上面 */
+*,*::before,*::after{box-sizing: border-box;}
+h1{
+    font-size: 36px;
+    margin: 20px 0px;
+}
+.smallMark{
+    font-size: 20px;
+    margin: 10px 0px;
+    text-indent: 36px;
+}
+.bigWrap{
+    margin: 50px;   
+}
+
+.wrap-row{
+    display: flex;
+}
+.wrapSituation{
+    margin: 0px 50px;
+}
+p {
+    margin: 5px;
+    font-size: 18px;
+}
+.situationContent{
+    height: 500px;
+    overflow: auto;
+
+    text-indent: 36px;
+    display: flex;
+    flex-direction: column;
+
+}
+/*  */
+.wrapGame{
+    background-color: pink;
+    width: 800px;
+    height: 500px;
+    border: 5px solid rgb(66, 58, 58);
+    position: relative;
+}
+
+.box{
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius: 0%;
+    position: absolute;
+}
+
+.box1{
+    background-color: rgb(83, 148, 245);
+    border-radius: 0%;
+
+/* 最後位置 */
+left: 50px;
+top: 200px;
+
+/* 動畫  animation*/
+ /* 名子 */
+animation-name: rotate; 
+
+/* 移動幾秒 */
+animation-duration: 5s;  
+
+/* 移動方向-來回 */
+/* animation-direction: alternate-reverse;   */
+
+/* 移動速度 */
+animation-timing-function: linear;   
+/* 循環播放 */
+animation-iteration-count: infinite; 
+
+
+}
+
+.box2{
+    background-color: rgb(221, 245, 83);
+    border-radius: 50%;
+    left: 200px;
+    top: 40px;
+    animation: rotate 1s cubic-bezier(0.83, 0.6, 0, 0.6) infinite; 
+}
+.box3{
+    background-color: rgb(245, 83, 83);
+    border-radius: 0%;
+    left: 350px;
+    top: 40px;
+    animation: rotate 10s ease-out infinite; 
+}
+.box4{
+    background-color: rgb(83, 245, 183);
+    border-radius: 50%;
+    left: 500px;
+    top: 40px;
+    animation: rotate 5s cubic-bezier(0, 0.43, 0.99, 0.57) infinite; 
+}
+
+.box5{
+    background-color: rgb(245, 180, 83);
+    border-radius: 0%;
+    left: 650px;
+    top: 40px;
+    animation: rotate 2s cubic-bezier(0, 0.43, 0.99, 0.57) infinite; 
+}
+
+.box6{
+    background-color: rgb(45, 43, 59);
+    border-radius: 50%;
+    left: 650px;
+    top: 0px;
+    animation: rotate-row 2s cubic-bezier(0.07, 1.15, 1,-0.1) infinite; 
+}
+.box7{
+    background-color: rgb(86, 165, 66);
+    border-radius: 0%;
+    left: 650px;
+    top: 200px;
+    animation: rotate-row 2s cubic-bezier(1, 0.05, 1, 0.48) infinite; 
+}
+
+.box8{
+    background-color: rgb(226, 83, 245);
+    border-radius: 50%;
+    left: 100px;
+    top: 400px;
+    animation: rotate-row 2s cubic-bezier(1, 0.02, 0.61, 1.04) infinite; 
+}
+
+
+@keyframes rotate {
+    0% {
+      /* transform: rotate(0); */
+      top: 5px;
+    }
+    50%{
+        top: 410px;
+    }
+    100% {
+      /* transform: rotate(360deg); */
+      top: 5px;
+    }
+  }
+
+  @keyframes rotate-row {
+    0% {
+      /* transform: rotate(0); */
+      left: 5px;
+    }
+    50%{
+        left: 710px;
+    }
+    100% {
+      /* transform: rotate(360deg); */
+      left: 5px;
+    }
+  }
+
+
+
+  .images img{
+      width: 80px;
+  }
+
+  .img{
+      position: absolute;
+  }
+
+  .img1{
+      left: 350px;
+      top: 10px;
+  }
+  .img2{
+      left: 650px;
+      top: 150px;
+  }
+  .img3{
+      left: 200px;
+      top: 100px;
+  }
+  .img4{
+      left: 250px;
+      top: 250px;
+  }
+  .img5{
+      left: 500px;
+      top: 310px;
+  }
+  .img6{
+      left: 60px;
+      top: 360px;
+  }
+
+  
+  .img1-1{
+      display: none;
+      /* display: block; */
+  }
+  .img2-2{
+      display: none;
+  }
+  .img3-3{
+      display: none;
+  }
+  .img4-4{
+      display: none;
+  }
+  .img5-5{
+      display: none;
+  }
+  .img6-6{
+      display: none;
+  }
+ 
