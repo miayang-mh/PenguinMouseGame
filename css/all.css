@@ -94,9 +94,8 @@ p {
     font-size: 18px;
 }
 .situationContent{
-    height: 500px;
+    height: 200px;
     overflow: auto;
-
     text-indent: 36px;
     display: flex;
     flex-direction: column;
@@ -104,7 +103,6 @@ p {
 }
 /*  */
 .wrapGame{
-    background-color: pink;
     background-color: rgba(255, 192, 203, 0.486);
     width: 800px;
     height: 500px;
